@@ -1,0 +1,23 @@
+{
+  "name": "cluster-executor",
+  "version": "0.0.1",
+  "description": "WorkerPool based on cluster that allows executing synchronous functions asynchronously using forks stored in pool.",
+  "main": "executor.js",
+  "scripts": {
+    "test": "node tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarthPigrum/cluster-executor.git"
+  },
+  "keywords": [
+    "WorkerPool",
+    "cluster-executor"
+  ],
+  "author": "Mike Zhukov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DarthPigrum/cluster-executor/issues"
+  },
+  "homepage": "https://github.com/DarthPigrum/cluster-executor#readme"
+}
