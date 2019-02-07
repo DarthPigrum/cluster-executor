@@ -4,7 +4,7 @@ const { isMaster } = require('cluster');
 const numberOfThreads = 4;
 const threadsInPool = 2;
 const DATA = 'test';
-const START = '00';
+const START = '00000';
 if (isMaster) {
   const pool = new WorkerPool(threadsInPool);
   pool.allowSpawn = true;

@@ -6,7 +6,7 @@ if (cluster.isMaster) {
     constructor(size = 0) {
       this.workers = [];
       this.allowSpawn = false;
-      for (let n = 0; n < size; n++) this.workers[n] = cluster.fork();
+      for (let n = 0; n < size; n++) this.workers.push(cluster.fork());
     }
     run(fn, ...args) {
       if (this.workers.length === 0 && !this.allowSpawn) {
@@ -42,7 +42,8 @@ if (cluster.isMaster) {
       const args = JSON.parse(msg);
       const script = vm.createScript(args.shift());
       const fn = script.runInNewContext({ require });
-      process.send({ result: fn(...args) });
+      const result = fn(...args);
+      process.send({ result });
     } catch (error) {
       process.send({ error });
     }
