@@ -33,7 +33,7 @@ if (isMaster) {
       cancelThreads();
       if (res.hash.startsWith(START)) {
         if (canceled === numberOfThreads - 1 && finished === 1) {
-          console.log('Tests passed')
+          console.log('Tests passed');
           process.exit(0);
         } else { throw new Error('Cancelation error'); }
       } else { throw new Error('Calculation error'); }

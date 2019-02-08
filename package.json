@@ -1,6 +1,6 @@
 {
   "name": "cluster-executor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "WorkerPool based on cluster that allows executing synchronous functions asynchronously using forks stored in pool.",
   "main": "executor.js",
   "scripts": {

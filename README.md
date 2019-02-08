@@ -1,6 +1,8 @@
-# WorkerPool based on cluster that allows executing synchronous functions asynchronously using forks stored in pool
+### WorkerPool based on cluster that allows executing synchronous functions asynchronously using forks stored in pool
 [![Build Status](https://travis-ci.org/DarthPigrum/cluster-executor.svg?branch=master)](https://travis-ci.org/DarthPigrum/cluster-executor)
-## Usage
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8d162e00881c4673a508ad60bd160118)](https://www.codacy.com/app/DarthPigrum/cluster-executor?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DarthPigrum/cluster-executor&amp;utm_campaign=Badge_Grade)
+[![npm version](https://badge.fury.io/js/cluster-executor.svg)](https://badge.fury.io/js/cluster-executor)
+#### Usage
 ```javascript
 const { isMaster } = require('cluster');
 const WorkerPool = require('cluster-executor');
